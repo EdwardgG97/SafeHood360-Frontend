@@ -42,30 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // REGISTRO
-  const registroForm = document.querySelector('.registro-form');
-  if (registroForm) {
-    registroForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const inputs = registroForm.querySelectorAll(
-        'input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="date"]'
-      );
-      let camposVacios = false;
-
-      inputs.forEach(input => {
-        if (input.value.trim() === '') {
-          camposVacios = true;
-        }
-      });
-
-      if (camposVacios) {
-        alert('⚠️ Por favor, completa todos los campos antes de registrarte.');
-      } else {
-        alert('✅ Registro completo. (Aquí iría la lógica real)');
-      }
-    });
-  }
-
   // RECUPERACIÓN DE CUENTA
   const sendBtn = document.getElementById('sendBtn');
   if (sendBtn) {
