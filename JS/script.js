@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Login exitoso
+        localStorage.setItem('username', username);
         alert('✅ Login exitoso');
         window.location.href = 'HTML/inicio.html';
 

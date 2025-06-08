@@ -25,6 +25,8 @@
       </div>
       <div class="logout">
           <a href="../index.html">Cerrar sesión</a>
+          <script src="../JS/script.js"></script>
+          <script src="../JS/profile.js"></script>
       </div>
     </div>
 
@@ -34,45 +36,47 @@
         <h2>Perfil</h2>
         <div class="profile-img">
           <div class="avatar">👤</div>
+          <input type="file" id="profileImage" accept="image/*" style="display: none;">
+          <button onclick="document.getElementById('profileImage').click()" class="btn-update">Cambiar imagen</button>
         </div>
 
         <div class="profile-fields">
           <div class="field">
             <label>Nombres:</label>
-            <input type="text" value="Edward Alejandro">
+             <input type="text" id="firstName">
           </div>
           <div class="field">
             <label>Apellidos:</label>
-            <input type="text" value="Garcia Gonzalez">
+             <input type="text" id="lastName">
           </div>
           <div class="field">
             <label>Sexo:</label>
-            <input type="text" value="Masculino">
+             <input type="text" id="gender">
           </div>
           <div class="field">
             <label>Dirección:</label>
-            <input type="text" value="Tv 7 # 4 A - 83">
+             <input type="text" id="address">
           </div>
           <div class="field">
             <label>Correo:</label>
-            <input type="email" value="egarci71@estudiante.ibero">
+             <input type="email" id="email">
           </div>
           <div class="field">
             <label>Contraseña:</label>
-            <input type="password" value="********">
+             <input type="password" id="password">
           </div>
           <div class="field">
             <label>Celular:</label>
-            <input type="tel" value="3015820854">
+             <input type="tel" id="phone">
           </div>
           <div class="field">
             <label>Fecha Nacimiento:</label>
-            <input type="date" value="1997-01-12">
+             <input type="text" id="birthDate">
           </div>
         </div>
 
         <div class="buttons">
-          <button class="btn-update">Actualizar</button>
+          <button id="updateProfileBtn" class="btn-update">Actualizar Perfil</button>
           <button class="btn-update" onclick="window.location.href='../HTML/inicio.html'">Volver</button>
         </div>
       </div>
@@ -85,5 +89,7 @@
     <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" class="icon"></a>
     <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" class="icon"></a>
   </footer>
+  <script src="../JS/script.js"></script>
+  <script src="../JS/profile.js"></script>
 </body>
 </html>
